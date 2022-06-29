@@ -35,7 +35,7 @@ public:
 		if(c.size == 0)
 			return os << "empty " << endl;
 		for(int i = c.head, count = 0; count < c.size; count++) {
-			os << "vettore = " << c.array[i] << endl;
+			os << *c.array[i] << endl;
 			i = i+1 % c.max_size;
 		}
 		return os;
